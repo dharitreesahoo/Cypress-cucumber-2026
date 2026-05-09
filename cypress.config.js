@@ -1,8 +1,11 @@
 const { defineConfig } = require("cypress");
+
 const createBundler = require("@bahmutov/cypress-esbuild-preprocessor");
+
 const {
   addCucumberPreprocessorPlugin,
 } = require("@badeball/cypress-cucumber-preprocessor");
+
 const {
   createEsbuildPlugin,
 } = require("@badeball/cypress-cucumber-preprocessor/esbuild");
@@ -23,15 +26,5 @@ module.exports = defineConfig({
 
       return config;
     },
-  },
-
-  env: {
-    stepDefinitions: "cypress/e2e/step_definitions/**/*.js",
-    cucumberJson: {
-      generate: true,
-      outputFolder: "cypress/cucumber-json",
-      filePrefix: "",
-      fileSuffix: ".json"
-    }
   },
 });
