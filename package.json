@@ -5,7 +5,11 @@
   "scripts": {
     "cy:run": "cypress run",
     "report": "node cucumber-report.js",
-    "test": "cypress run && node cucumber-report.js"
+    "smoke:test": "cypress run --env tags=\"@smoke\"",
+    "regression:test": "cypress run --env tags=\"@regression\"",
+    "smoke": "npm run smoke:test && npm run report",
+    "regression": "npm run regression:test && npm run report",
+    "test": "npm run cy:run && npm run report"
   },
   "keywords": [],
   "author": "",
