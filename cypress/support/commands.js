@@ -28,3 +28,12 @@ Cypress.Commands.add("login", (username, password) => {
     cy.get("#password").type(password);
     cy.get("#login-button").click();
 });
+Cypress.Commands.add('checkAccessibility', () => {
+
+    cy.injectAxe();
+
+    cy.checkA11y(null, {
+        includedImpacts: ['critical', 'serious']
+    });
+
+});

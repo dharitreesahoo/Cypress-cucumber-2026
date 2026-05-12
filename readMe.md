@@ -29,5 +29,8 @@ shift+ctrl+p - User.Settings.json
     }
 }
 
-npm install mochawesome mochawesome-merge mochawesome-report-generator --save-dev
-npx cypress run
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< acceessibility and cucumber report>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+ npx cypress run 
+ node generate-accessibility-report.js
+ node generate-cucumber-report.js
+ <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< cucumber report>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>

@@ -1,4 +1,4 @@
-Feature: Login
+Feature: LoginDataDriven
     @regression
     Scenario Outline: Successful login
         Given I open the login page
