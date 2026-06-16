@@ -3,16 +3,11 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "cy:run": "cypress run",
-    "report": "node cucumber-report.js",
-    "smoke:test": "cypress run --env tags=\"@smoke\"",
-    "regression:test": "cypress run --env tags=\"@regression\"",
-    "smoke": "npm run smoke:test && npm run report",
-    "regression": "npm run regression:test && npm run report",
-    "clean:reports": "rimraf cypress/cucumber-report",
-    "accessibility:test": "cypress run --env TAGS=\"@accessibility\"",
-    "report:cucumber": "node cucumber-report.js",
-    "accessibility": "npm run clean:reports && npm run accessibility:test && npm run report:cucumber"
+    "clean": "rimraf cypress/accessibility-report cypress/cucumber-report",
+    "cy:run": "npm run clean && cypress run",
+    "reportGenerate": "node generate-accessibility-report.js && node generate-cucumber-report.js",
+    "test": "npm run cy:run",
+    "report": "npm run reportGenerate"
   },
   "keywords": [],
   "author": "",

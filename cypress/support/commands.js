@@ -37,3 +37,23 @@ Cypress.Commands.add('checkAccessibility', () => {
     });
 
 });
+Cypress.Commands.add("apiLogin", () => {
+
+    cy.request({
+        method: "POST",
+        url: "https://reqres.in/api/login",
+        body: {
+            email: "eve.holt@reqres.in",
+            password: "cityslicka"
+        }
+    }).then((response) => {
+
+        expect(response.status).to.eq(200);
+
+        const token = response.body.token;
+
+        Cypress.env("token", token);
+
+    });
+
+});

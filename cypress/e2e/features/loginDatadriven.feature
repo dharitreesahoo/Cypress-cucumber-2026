@@ -1,5 +1,5 @@
 Feature: LoginDataDriven
-    @regression
+    @smoke @regression
     Scenario Outline: Successful login
         Given I open the login page
         When I enter username "<username>" and password "<password>"

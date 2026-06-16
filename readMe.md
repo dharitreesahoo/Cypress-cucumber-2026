@@ -34,3 +34,7 @@ shift+ctrl+p - User.Settings.json
  node generate-accessibility-report.js
  node generate-cucumber-report.js
  <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< cucumber report>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+ how to execute 
+ npm run cy:run (package.json script)
+ >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+ 
