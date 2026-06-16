@@ -33,8 +33,9 @@ shift+ctrl+p - User.Settings.json
  npx cypress run 
  node generate-accessibility-report.js
  node generate-cucumber-report.js
- <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< cucumber report>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
- how to execute 
- npm run cy:run (package.json script)
- >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+ <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< how to execute in headless mode>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+ npm run test (generates json)
+ npm run report(generates HTML report)
+ >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>headed mode >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+ npx cypress open
  

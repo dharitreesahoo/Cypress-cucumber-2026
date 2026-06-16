@@ -5,6 +5,9 @@
   "scripts": {
     "clean": "rimraf cypress/accessibility-report cypress/cucumber-report",
     "cy:run": "npm run clean && cypress run",
+    "cy:login": "npm run clean && cypress run --spec \"cypress/e2e/features/loginDatadriven.feature\"",
+    "cy:login:chrome": "npm run clean && cypress run --browser chrome --spec \"cypress/e2e/features/loginDatadriven.feature\"",
+    "cy:login:edge": "npm run clean && cypress run --browser edge --spec \"cypress/e2e/features/loginDatadriven.feature\"",
     "reportGenerate": "node generate-accessibility-report.js && node generate-cucumber-report.js",
     "test": "npm run cy:run",
     "report": "npm run reportGenerate"
